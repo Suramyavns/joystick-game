@@ -1,8 +1,9 @@
 """
 Breakout — controlled by the Arduino Nano Bluetooth joystick.
 
-Controller protocol (from component_test.ino, 9600 baud over HC-05):
-    X<0-1023>,Y<0-1023>,B<0|1>\n        e.g.  X512,Y287,B0
+Controller protocol (from component_test.ino, 9600 baud over HC-05),
+5-byte binary packets:
+    [0xA5] [x] [y] [button] [x^y^button]     x, y: 0-255, centre ~128
 
 Controls:
     Joystick X axis  -> move paddle (analog: further = faster)
