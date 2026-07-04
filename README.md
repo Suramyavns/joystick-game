@@ -6,7 +6,13 @@ The Nano streams the joystick state over Bluetooth as compact 5-byte binary pack
 
 ## Demo
 
-▶️ **[Watch the demo video](demo.mp4)** — playing Breakout with the Bluetooth joystick.
+▶️ **Watch the demo video**
+
+<video src="demo.mp4" controls width="720">
+  Your browser does not support the video tag.
+</video>
+
+Play Breakout using the custom Bluetooth joystick built with an Arduino Nano and HC-05 module.
 
 <!-- For an inline player instead of a link: edit this README on github.com
      and drag demo.mp4 into the editor — GitHub uploads it and embeds it. -->
