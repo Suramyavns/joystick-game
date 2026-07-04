@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version)",
+      "PowerShell(pip show pyserial 2>$null)",
+      "PowerShell([System.IO.Ports.SerialPort]::GetPortNames\\(\\))",
+      "PowerShell(Get-CimInstance Win32_PnPEntity | Where-Object { $_.Name -match 'COM\\\\d' } | Select-Object -ExpandProperty Name)",
+      "PowerShell(Get-PnpDevice -Class Bluetooth)",
+      "PowerShell(python \"C:\\\\Users\\\\sdidw\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-sdidw-OneDrive-Documents-Arduino-component-test\\\\a058f6e7-1c69-4d9e-b087-1fbb4f778c6c\\\\scratchpad\\\\probe_hc05.py\")"
+    ]
+  }
+}
